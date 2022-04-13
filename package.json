@@ -4,6 +4,7 @@
   "description": "2022 State Leadership Conference TSA Coding Competition",
   "main": "src/main.js",
   "scripts": {
+    "dev": "node src/index.js",
     "watch": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
