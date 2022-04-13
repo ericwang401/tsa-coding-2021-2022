@@ -1,0 +1,15 @@
+{
+  "name": "tsa-coding-competition",
+  "version": "1.0.0",
+  "description": "2022 State Leadership Conference TSA Coding Competition",
+  "main": "src/main.js",
+  "scripts": {
+    "watch": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
