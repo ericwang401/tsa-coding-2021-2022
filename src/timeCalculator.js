@@ -92,4 +92,6 @@ readline.question('', (time) => {
         let resultHoursAMPM = addExtraZeroToHours(resultHours)
         console.log(`${resultHoursAMPM}:${resultMinutes} AM`)
     }
+
+    readline.close();
 });

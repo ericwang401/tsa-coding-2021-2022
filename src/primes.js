@@ -21,4 +21,6 @@ readline.question('', (number) => {
 
     // if the previous instruction does not exit, the number is prime
     console.log('Prime')
+
+    readline.close();
 });
