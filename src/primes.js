@@ -4,7 +4,7 @@ const readline = require('readline').createInterface({
 });
 
 readline.question('', (number) => {
-    // edge case, since 2 is the only even number that is prime
+    // special situation I have to account for, since 2 is the only even number that is prime
     if (number === 2) {
         console.log('Prime');
         return
@@ -13,8 +13,10 @@ readline.question('', (number) => {
     // check if a number is prime
     for (let i = 2; i < number.length; i++) {
         let divided = number / i
-        if (Math.floor(divided) === divided) {
+        if (Math.floor(divided) === divided) { // a stupid way to check if a number is an integer
             console.log('Not a prime');
+
+            readline.close();
             return
         }
     }

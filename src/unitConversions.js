@@ -5,6 +5,7 @@ const readline = require('readline').createInterface({
 
 
 // us: cups || metric: grams
+// the us property was pretty useless
 const ingredients = [
     { name: 'all-purpose flour', us: 1, metric: 142 },
     { name: 'cake flour', us: 1, metric: 113 },
@@ -24,6 +25,8 @@ const weightConversions = [
     { name: 'oz', metric: 28},
 ]
 
+
+// I couldn't add this. I'm using this chart to round the number to the nearest value in this chart, but I ran out of time
 const volumesChart = [
     1.25,
     2.5,
@@ -40,6 +43,7 @@ const volumesChart = [
     4000
 ]
 
+// same thing here, didn't get it to work in the time constraint
 const weightsChart = [
     14,
     28,
@@ -89,6 +93,8 @@ readline.question('', (input) => {
 
         console.log(amount, unit, formattedArguments[2])
 
+        readline.close();
+
         return
     }
 
@@ -103,10 +109,12 @@ readline.question('', (input) => {
         convertedValue = convertedValue * Number(formattedArguments[3].substring(1))
 
         // round volume to nearest value in volumesChart
-        const roundedValue = volumesChart.find(volume => volume >= convertedValue)
+        //const roundedValue = volumesChart.find(volume => volume >= convertedValue)
 
         let [amount, unit] = convertML(convertedValue)
         console.log(amount, unit, formattedArguments[2])
+
+        readline.close();
 
         return
     }
@@ -118,11 +126,13 @@ readline.question('', (input) => {
         let convertedValue = Number(arguments[0]) * weightConversion.metric
         convertedValue = convertedValue * Number(formattedArguments[3].substring(1))
 
-        const roundedValue = volumesChart.find(volume => volume >= convertedValue)
+        //const roundedValue = volumesChart.find(volume => volume >= convertedValue)
 
         let [amount, unit] = convertG(convertedValue)
 
         console.log(amount, unit, formattedArguments[2])
+
+        readline.close();
 
         return
     }
