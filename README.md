@@ -81,7 +81,7 @@ Now that you are able to run the code, here's some example demonstrations you ca
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ericwang401/pane/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ericwang401/tsa-coding-2021-2022/issues).
 
 ## Show your support
 
@@ -92,4 +92,4 @@ Please donate to [my Patreon](https://www.patreon.com/performave) to help let me
 ## 📝 License
 
 Copyright © 2022 [Eric Wang](https://github.com/ericwang401).<br />
-This project is [MIT](https://github.com/ericwang401/pane/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/ericwang401/tsa-coding-2021-2022/blob/main/LICENSE) licensed.
